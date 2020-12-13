@@ -1,0 +1,366 @@
+    /*Standardise text inside the whole page*/
+    
+    header {
+        display: block;
+        position: relative;
+    }
+    
+    body {
+        color: black;
+    }
+    
+    h1,
+    h2,
+    nav {
+        font-family: 'Kanit', sans-serif;
+        font-weight: normal;
+    }
+    
+    h1 {
+        margin: 0% 0% 0% 0%;
+        color: rgb(255, 255, 255);
+        padding: 10px 0% 5px 0%;
+    }
+    
+    h2 {
+        color: rgb(72, 81, 133);
+    }
+    /* =================================================================================================================================================================
+When screen is large */
+    
+    @media (min-width: 600px) {
+        body {
+            /*DONE - DONT TOUCH*/
+            background: grey;
+            position: relative;
+            max-width: 130ch;
+            margin: 0 auto 0 auto;
+        }
+        #main-screen {
+            background: white;
+        }
+        main {
+            /*DONE - DONT TOUCH - just make the grey bits at the top and bottom dissapear*/
+            background: white;
+            max-width: 100%;
+            font-size: 2.6ch;
+            top: 0;
+            bottom: 0;
+        }
+        main p,
+        h2,
+        main li,
+        footer p {
+            margin: 2.5% 80px;
+        }
+        p {}
+        #topTitle {
+            /*DONE - DONT TOUCH*/
+            position: relative;
+            max-width: 130ch;
+            height: 30ch;
+            background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-left: black solid 80px;
+            border-right: black solid 80px;
+        }
+        section {
+            margin: 5% 80px 5% 0%;
+        }
+        section p {
+            margin-right: 2%;
+        }
+        h1 {
+            font-size: 8ch;
+        }
+        nav {
+            transform: translateX(-10%) translateY(180%);
+            width: 112%;
+        }
+        nav ul {
+            text-align: right;
+            padding-left: 0;
+            bottom: 0;
+        }
+        nav ul li {
+            display: inline;
+            text-align: right;
+            font-size: 2ch;
+            text-align: right;
+            padding: 0% 1%;
+        }
+        nav ul li+li {
+            margin-left: 1.5%;
+        }
+        figure {
+            /*DONE - DONT TOUCH*/
+            box-sizing: border-box;
+            width: 70%;
+            border: 4px solid rgba(151, 146, 146, 0.4);
+            border-radius: 6%;
+            text-align: center;
+            margin: 0 auto 2% 2%;
+            float: right;
+        }
+        figure figcaption {
+            /*DONE - DONT TOUCH*/
+            padding: 2%;
+        }
+        #intro-pic {
+            margin: 5% 5% 0% 5%;
+            width: 90%;
+        }
+        #video {
+            /*DONE - DONT TOUCH*/
+            padding: 5% 5% 0% 5%;
+            width: 90%;
+            height: 30ch;
+        }
+        #table-figure {
+            box-sizing: content-box;
+            margin: 0 auto 2% auto;
+            align-content: center;
+            width: 91%;
+        }
+        #table {
+            float: left;
+            margin: 0% 0% 2% 2%;
+        }
+        table tbody {
+            width: 45%;
+        }
+        table th,
+        table td {
+            padding: 2% 0%;
+            text-indent: 10px;
+        }
+        #boxingMap {
+            float: right;
+            width: 50%;
+            margin: 5% 2% 0% auto;
+        }
+        blockquote {
+            font-style: italic;
+        }
+        .no-italics {
+            font-style: normal !important;
+        }
+        footer p {
+            position: relative;
+            background-color: black;
+            max-width: 100ch;
+            padding: 0;
+            text-indent: 25%;
+            padding: 5ch 0ch 5ch 0ch;
+            margin-bottom: 0;
+        }
+    }
+    /*When screen is small - do this first*/
+    
+    @media (max-width: 600px) {
+        body {
+            /*Standardise text inside the whole page*/
+            font-size: 3.5vw;
+            margin: 0 0 0 0;
+            overflow-x: hidden;
+        }
+        main {
+            margin-bottom: 5%;
+            background-color: white;
+            padding: 5.5% 0% 5.5% 0%;
+        }
+        section {
+            margin-bottom: 5%;
+        }
+        #topTitle {
+            /*DONE - DONT TOUCH*/
+            position: sticky;
+            width: 100%;
+            background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-family: 'Kanit', sans-serif;
+        }
+        nav ul {
+            text-decoration: none;
+            font-size: 2.5vw;
+            text-align: right;
+        }
+        h1 {
+            /*DONE - DONT TOUCH*/
+            font-size: 8vw;
+            padding-left: 2vw;
+            transform: translateY(25%);
+        }
+        h2 {
+            /*DONE - DONT TOUCH*/
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        p {
+            /*DONE - DONT TOUCH*/
+            padding-left: 2vw;
+            padding-right: 3vw;
+        }
+        nav ul {
+            /*DONE - DONT TOUCH*/
+            padding-left: 0;
+            list-style: none;
+            position: sticky;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        nav li {
+            /*DONE - DONT TOUCH*/
+            width: 99vw;
+            padding: 1em 0em 0.5em 0em;
+        }
+        nav a {
+            /*DONE - DONT TOUCH*/
+            padding-right: 4vw;
+        }
+        li {
+            /*DONE - DONT TOUCH*/
+            padding-right: 3vw;
+        }
+        figure {
+            /*DONE - DONT TOUCH*/
+            box-sizing: border-box;
+            width: 90%;
+            border: 2px solid rgba(151, 146, 146, 0.4);
+            border-radius: 7%;
+            text-align: center;
+            margin: 0 auto 0 auto;
+        }
+        figure figcaption {
+            /*DONE - DONT TOUCH*/
+            padding: 5% 5% 5% 5%;
+        }
+        #intro-pic {
+            /*DONE - DONT TOUCH*/
+            padding: 5% 5% 0% 5%;
+            width: 90%;
+            height: auto;
+            padding-top: 2vh;
+        }
+        #video {
+            /*DONE - DONT TOUCH*/
+            padding: 5% 5% 0% 5%;
+            width: 75vw;
+            height: 42.1875vw;
+        }
+        #figcap {
+            /*DONE - DONT TOUCH*/
+            padding-bottom: 4%;
+        }
+        #table-figure {
+            /*DONE - DONT TOUCH*/
+            width: 98%;
+        }
+        table {
+            /*DONE - DONT TOUCH*/
+            margin: 0 auto 5% auto;
+        }
+        #boxingMap {
+            /*DONE - DONT TOUCH*/
+            width: 90%;
+            height: 90%;
+            padding: 5%;
+        }
+        ul {
+            /*DONE - DONT TOUCH*/
+            padding-left: 7vw;
+        }
+        blockquote {
+            /*DONE - DONT TOUCH*/
+            margin-left: 5.7vw;
+            width: 95%;
+        }
+        footer p {
+            padding: 1vw 0vw 1vw 0vw;
+            text-align: center;
+        }
+    }
+    /*For element properties that apply to both screen sizes
+DONE - DONT TOUCH                                         */
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav li:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    nav li:hover .li {
+        color: yellow;
+        opacity: 100% !important;
+    }
+    
+    nav a {
+        text-decoration: none !important;
+        color: white;
+    }
+    
+    footer {
+        /*DONE - DONT TOUCH*/
+        background: black;
+        width: 100%;
+        color: white;
+    }
+    
+    figcaption {
+        font-style: italic;
+    }
+    /* ================================================================================================================================================================= */
+    /*Inserting chess pieces larger than the font in the headings
+DONE - DONT TOUCH                                               */
+    
+    #history::before {
+        content: "\2655";
+        font-size: 180%;
+    }
+    
+    #rules::before {
+        content: "\265a";
+        font-size: 180%;
+    }
+    
+    #training::before {
+        content: "\2656";
+        font-size: 180%;
+    }
+    
+    #competition::before {
+        content: "\265d";
+        font-size: 180%;
+    }
+    
+    #video {
+        border: none;
+    }
+    /*Fine tuning the table
+DONE - DONT TOUCH                                                   */
+    
+    figure table {
+        /*DONE - DONT TOUCH*/
+        text-align: left;
+    }
+    
+    th {
+        /*DONE - DONT TOUCH*/
+        border-top: 0.2ch solid grey;
+        border-bottom: 0.2ch solid grey;
+        text-align: center;
+    }
+    
+    .last-table-line {
+        /*DONE - DONT TOUCH*/
+        border-bottom: 0.2ch solid grey;
+    }
+    
+    td {
+        /*DONE - DONT TOUCH*/
+        border-bottom: 0.1px solid grey;
+    }
